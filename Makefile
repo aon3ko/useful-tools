@@ -5,7 +5,7 @@ LDLIBS = -lsodium
 PREFIX ?= /usr
 BINDIR ?= $(PREFIX)/bin
 DAWN_OBJECT = dawn-libs/bin/d_string.o
-SH_FILES = pacman_mirrorlist.sh 14c3.sh kh.sh nft-formatter.sh
+SH_FILES = pacman-mirrorlist.sh 14c3.sh kh.sh nft-formatter.sh
 
 all: passwdgen2
 
