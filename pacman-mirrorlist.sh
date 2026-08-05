@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-if [ "$#" -lt 1 ]; then
+if [ "$#" -lt 1 ] || [ "$#" -gt 1 ]; then
 	echo "Usage: $0 <CountryCode>"
 	exit 1
 fi
 
-if [ "$EUID" -ne 0 ]; then
+if [ "$(id -u)" -ne 0 ]; then
 	echo "Error: This script must be run as root." >&2
 	exit 1
 fi
